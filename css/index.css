@@ -85,19 +85,19 @@ header {
 	margin-bottom: 2%;
 }
 nav {
-	width: 75%;
+	width: 100%;
     display: block;
-    margin-top: -2.5%;
+    margin-top: 2%;
 }
 
 nav ul {
 	width: 100%;
-	text-align: justify;
+    text-align: center;
+    margin: 0 auto;
 }
 
 nav ul li {
-	display: inline-block;
-	margin-right: 10%;
+	display: block;
 	padding-bottom: 10px;
 }
 
@@ -111,13 +111,14 @@ header {
 
 .logo {
 	height: 100%;
-	margin-left: 85%;
+    margin: 0 auto;
+    display: block;
 }
 
 /* main section */
 .container .main div {
 	display: inline-block;
-	width: 49%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -136,8 +137,12 @@ header {
 }
 
 .secondSection div {
-	width: 49%;
-	display: inline-block;
+	width: 100%;
+	display: block;
+}
+
+#about {
+    margin-top: 6%;
 }
 
 /* img section */
@@ -156,8 +161,8 @@ header {
 
 /* third section */
 .thirdSection div {
-	width: 32%;
-	display: inline-block;
+	width: 100%;
+	display: block;
 	text-align: left;
 	padding: 10px 35px 10px 0;
 	margin-bottom: 2em;
@@ -175,20 +180,52 @@ header {
         width: 85%;
         padding: 0 5%;
         margin: 0 auto;
-        background-color: green;
+    }
+
+    .secondSection div {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .thirdSection div {
+        width: 32%;
+        display: inline-block;
+        text-align: left;
+        padding: 10px 35px 10px 0;
+        margin-bottom: 2em;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 800px) {
-    .container {
-        background-color: gold;
+    .container .main div {
+        width: 49%;
     }
 
-    .nav {
+    nav {
         display: flex;
+        width: 75%;
+        margin-top: -2.5%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 10%;
     }
 
     .header-img {
         display: flex;
+    }
+
+    .logo {
+        margin-left: 85%;
     }
 }
