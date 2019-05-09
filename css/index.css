@@ -65,10 +65,10 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 85%;
-	padding: 0 5%;
-	margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
+
 
 hr {
 	display: block;
@@ -86,7 +86,8 @@ header {
 }
 nav {
 	width: 75%;
-	display: inline-block;
+    display: block;
+    margin-top: -2.5%;
 }
 
 nav ul {
@@ -110,7 +111,7 @@ header {
 
 .logo {
 	height: 100%;
-	margin-left: 5%;
+	margin-left: 85%;
 }
 
 /* main section */
@@ -140,6 +141,10 @@ header {
 }
 
 /* img section */
+.header-img {
+    display: none;
+}
+
 .imgSection {
 	padding-bottom: 4%;
 }
@@ -162,4 +167,28 @@ header {
 .copyright {
 	text-align: center;
 	margin: 2em 0;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+    .container {
+        width: 85%;
+        padding: 0 5%;
+        margin: 0 auto;
+        background-color: green;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        background-color: gold;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .header-img {
+        display: flex;
+    }
 }
